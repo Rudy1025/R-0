@@ -1,40 +1,7 @@
 
 
-Marketplace logo
-Marketplace
-Edu Courses
-ThemesPlugin IdeasBuild Plugins
-Sign In
-Plugin Logo
-Programming Language
-Rust
-JetBrains s.r.o.
-Get
-Compatible with all IntelliJ-based IDEs
-Overview
-Versions
-Reviews
-What's New
-Documentation
-Introduction
-Quick start guide
-FAQ
-Language support
-Cargo support
-Project settings
-Building
-Testing
-Debugging
-Debug tool window
-Stepping through
-Memory, Disassembly, Hex views
-Switching debuggers and renderers
-Configuration settings for debug
-Remote debug with GDB/gdbserver (CLion)
-Run targets
-Dynamic analysis
-Rust REPL console
-WASM projects support
+
+
 Debugging﻿
 Debugging Rust code is available in CLion, IntelliJ IDEA Ultimate, PyCharm Professional, GoLand, and Rider (version 2022.1 and later).
 In IntelliJ IDEA Ultimate and other IDEs, debugging is available for LLDB only, and it requires the Native Debugging Support plugin. You will also need to install the debugger binaries separately (IntelliJ Rust will prompt you to do that upon starting the first debug session).
@@ -153,3 +120,16 @@ jobs:
         app-name:
         publish-profile: 
         package: 
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <packageSources>
+        <clear />
+        <add key="github" value="https://nuget.pkg.github.com/NAMESPACE/index.json" />
+    </packageSources>
+    <packageSourceCredentials>
+        <github>
+            <add key="Username" value="USERNAME" />
+            <add key="ClearTextPassword" value="TOKEN" />
+        </github>
+    </packageSourceCredentials>
+</configuration>
